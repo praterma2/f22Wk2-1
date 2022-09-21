@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<!--
+UATSpace page for CSC102 at UAT.edu
+by Matt Prater
+mprater@uat.edu
+
+Assignment: Launching your UAT Space Program HTML Document Tags
+12Sep2022
+Webpage with html and CSS
+-->
+<html>
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <title>
+        Prof. Prater's UATSpace Page
+    </title>
+</head>
+
+<body>
+    <script>
+        var alertText = "Test of the alert function.";
+        var docWriteText = "This is a test of the document.write function.";
+        var welcomeText = " Welcome to UAT Space!";
+    </script>
+    <!--the UATSpace logo, downloaded from https://synchronic.uat.edu/courses/5195/assignments/187442-->
+    <img src="UATspaceLogo.jpg">
+
+    <h1 id="blinkText">
+            UAT Space Program
+    </h1>
+    <p>
+        Test of the paragraph tags.<br>
+        The paragraph tags are used in html to display more than one sentence.<br>
+        This can be more than one line of text.<br>
+    </p>
+    <script>
+        alert(alertText + welcomeText);
+        document.write(docWriteText + welcomeText);
+    </script>
+    <br>
+    <br>
+    <br>
+    <button>
+        Start
+    </button>
+    <button>
+        Stop
+    </button>
+    <script type="text/javascript">
+        var blink = document.getElementById('blinkText');
+        setInterval(function() {
+            blink.style.opacity = (blink.style.opacity == 0 ? 1 : 0);
+        }, 1500);
+    </script>
+    
+</body>
+
+</html>
